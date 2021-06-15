@@ -1,21 +1,62 @@
-.board-container{
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 160px;
+.game-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    position: absolute;    
+    justify-content: center;
+    margin: 10px;
 
 }
 
+.board-container{
+    position: absolute;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 366px;
+    height: 366px;
+    background-color: lightcoral;
+    margin-top: 80px;
+}
 
 .box{
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid red;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #fff;
     text-align: center;
+    align-self:center;
+    font-size: 110px;
 }
 
-.ganador{
-    color: red;
+h2{
+    position:absolute;
+    text-align: center;
+    font-size: 30px;
+    color: lightcoral;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+.ganaste{ 
+    position: absolute;
+    font-size: 30px;
+    margin-top: 0px;
 }
 
+.bttn{
+    position: absolute;
+    top: 480px;
+    padding: 12px;
+    border:0;
+    border-radius: 5px;
+    background-color: lightcoral;
+    text-transform: uppercase;
+    color: #fff;
+}
 
+.bttn:hover{
+    background-color: rgb(250, 152, 152);
+}
